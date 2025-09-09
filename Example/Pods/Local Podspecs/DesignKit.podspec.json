@@ -1,0 +1,22 @@
+{
+  "name": "DesignKit",
+  "version": "0.1.0",
+  "summary": "A short description of DesignKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/wangpengyun/DesignKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "wangpengyun": "1306731868@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/wangpengyun/DesignKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "DesignKit/Classes/**/*"
+}
