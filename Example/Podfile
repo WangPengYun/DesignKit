@@ -1,6 +1,6 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '13.0'
 
 target 'DesignKit_Example' do
   pod 'DesignKit', :path => '../'
@@ -8,9 +8,8 @@ target 'DesignKit_Example' do
   target 'DesignKit_Tests' do
     inherit! :search_paths
 
-    pod 'Quick', '~> 2.2.0'
-    pod 'Nimble', '~> 10.0.0'
-    pod 'FBSnapshotTestCase' , '~> 2.1.4'
-    pod 'Nimble-Snapshots' , '~> 9.4.0'
+    pod 'Quick', '= 3.0.0'
+    pod 'Nimble', '= 13.7.1'
+    
   end
 end

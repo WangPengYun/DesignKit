@@ -1,6 +1,6 @@
 //
 //  Spacing.swift
-//  pdride_ios
+//  DesignKit
 //
 //  Created by 王瘦子 on 2025/9/8.
 //
@@ -14,6 +14,8 @@ public struct Spacing {
     public static let spacing24: CGFloat = 24.0
     public static let spacing32: CGFloat = 32.0
     public static let spacing40: CGFloat = 40.0
+    public static let spacing44: CGFloat = 44.0
     public static let spacing48: CGFloat = 48.0
+    public static let spacing54: CGFloat = 54.0
 
 }

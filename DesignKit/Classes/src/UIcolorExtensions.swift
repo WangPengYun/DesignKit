@@ -1,6 +1,6 @@
 //
-//  UIcolorExtensions.swift
-//  pdride_ios
+//  UIColorExtensions.swift
+//  DesignKit
 //
 //  Created by 王瘦子 on 2025/9/8.
 //
@@ -13,14 +13,14 @@ public extension UIColor {
     
     enum PYDesignKitColors {
         
-        public static let primary: UIColor = UIColor(hexString: "#0095B6")
-        public static let black: UIColor = UIColor(hexString: "#000000")
-        public static let white: UIColor = UIColor(hexString: "#FFFFFF")
-        public static let background: UIColor = UIColor(hexString: "#F8F8F8")
-        public static let line: UIColor = UIColor(hexString: "#EEEEEE")
-        public static let primaryText: UIColor = UIColor(hexString: "#333333")
-        public static let secondaryText: UIColor = UIColor(hexString: "#666666")
-        public static let tertiaryText: UIColor = UIColor(hexString: "#999999")
+        public static let primary: UIColor = dynamicColor(light: UIColor(hexString: "#0095B6"), dark: UIColor(hexString: "#0095B6"))
+        public static let black: UIColor = dynamicColor(light: UIColor(hexString: "#000000"), dark: UIColor(hexString: "#FFFFFF"))
+        public static let white: UIColor = dynamicColor(light: UIColor(hexString: "#FFFFFF"), dark: UIColor(hexString: "#000000"))
+        public static let background: UIColor = dynamicColor(light: UIColor(hexString: "#F8F8F8"), dark: UIColor(hexString: "#1D1D1D"))
+        public static let line: UIColor = dynamicColor(light: UIColor(hexString: "#EEEEEE"), dark: UIColor(hexString: "#484848"))
+        public static let primaryText: UIColor = dynamicColor(light: UIColor(hexString: "#333333"), dark: UIColor(hexString: "#8E8E8E"))
+        public static let secondaryText: UIColor = dynamicColor(light: UIColor(hexString: "#666666"), dark: UIColor(hexString: "#8E8E8E"))
+        public static let tertiaryText: UIColor = dynamicColor(light: UIColor(hexString: "#999999"), dark: UIColor(hexString: "#8E8E8E"))
 
     }
     
@@ -41,7 +41,7 @@ public extension UIColor {
         assert(hex.count == 6, "Invalid hex code.")
 
         var rgb: UInt64 = 0
-        Scanner(string: hexString).scanHexInt64(&rgb)
+        Scanner(string: hex).scanHexInt64(&rgb)
     
         let components = (
             R: CGFloat((rgb & 0xFF0000) >> 16) / 255.0,
